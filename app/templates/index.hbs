@@ -6,9 +6,11 @@ We hope you find exactly what you're looking for in a place to stay.
 <h2>Important Announcements: </h2>
 <ul>
   {{#each announcements as |announcement|}}
-    {{news-announcement announcement=announcement}}
+    {{news-announcement announcement=announcement destroyAnnouncement="destroyAnnouncement"}}
   {{/each}}
 </ul>
+
+{{new-announcement saveAnnouncement2="saveAnnouncement3"}}
 
 <ul>
   {{#each rentals as |rental|}}
