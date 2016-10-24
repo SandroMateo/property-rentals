@@ -14,11 +14,11 @@
 
       <div class="form-group">
         <label for="date">Date</label>
-        {{input value=date id="date"}}
+        {{input value=date id="date" type="date"}}
       </div>
       <button {{action 'saveAnnouncement1'}}>Save</button>
     </form>
   </div>
 {{else}}
-  <button {{action 'announcementFormShow'}}>New Announcement</button>
+  <button class="btn btn-success" {{action 'announcementFormShow'}}>New Announcement</button>
 {{/if}}

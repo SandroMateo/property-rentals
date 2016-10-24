@@ -1,8 +1,8 @@
 <h1> Welcome to Super Rentals </h1>
 
 We hope you find exactly what you're looking for in a place to stay.
-
-
+<h1>Today's date: {{moment-format (now) 'MM/DD/YYYY' date}}</h1>
+<h1>Time: {{moment-format (now) 'h:mm:ss a' interval=1000}}</h1>
 <h2>Important Announcements: </h2>
 <ul>
   {{#each announcements as |announcement|}}
